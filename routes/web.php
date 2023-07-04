@@ -138,4 +138,5 @@ Route::get('/delete-public-file', function(Request $request) {
     return 'Deleted Publik';
 });
 
+// download file
 Route::get('download-file/{employeeId}', [EmployeeController::class, 'downloadFile'])->name('employees.downloadFile');

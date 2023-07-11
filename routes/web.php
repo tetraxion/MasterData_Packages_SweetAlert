@@ -140,3 +140,12 @@ Route::get('/delete-public-file', function(Request $request) {
 
 // download file
 Route::get('download-file/{employeeId}', [EmployeeController::class, 'downloadFile'])->name('employees.downloadFile');
+
+// getEmployees
+Route::get('getEmployees', [EmployeeController::class, 'getData'])->name('employees.getData');
+
+// untuk exportexel
+Route::get('exportExcel', [EmployeeController::class, 'exportExcel'])->name('employees.exportExcel');
+
+// untuk exportPdf
+Route::get('exportPdf', [EmployeeController::class, 'exportPdf'])->name('employees.exportPdf');
